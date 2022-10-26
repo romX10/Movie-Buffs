@@ -1,5 +1,5 @@
 var searchButton = document.getElementById('searchButton')
-var searchInputn = document.getElementById('searchInput')
+var searchInput = document.getElementById('searchInput')
 
 
 
