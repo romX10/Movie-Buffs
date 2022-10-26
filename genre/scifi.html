@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Color scheme will be #020204 (black), #204829 (darker green), #80ce87 (lighter green)-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sci-fi Movies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <h1>Movie-Buffs</h1>
-        <ul>
-            <li><a class="active" href="genre\horror.html">Horror</a></li>
-            <li><a class="active" href="genre\action.html">Action</a></li>
-            <li><a class="active" href="genre\comedy.html">Comedy</a></li>
-            <li><a class="active" href="genre\scifi.html">Sci-Fi</a></li>
-            <li><a class="active" href="genre\romance.html">Romance</a></li>
-        </ul>
+<body style="font-family: 'Roboto Condensed', sans-serif;">
+    <nav class="navbar is-align-items-end" style="background-color: #020204;">
+        <div class="navbar-menu has-text-centered">
+            <h1 class="navbar-item has-text-weight-bold">Movie-Buffs</h1>
+            <div class="">
+            <a class="active navbar-item" href="genre\horror.html">Horror</a>
+            </div>
+            <a class="active navbar-item" href="genre\action.html">Action</a>
+            <a class="active navbar-item" href="genre\comedy.html">Comedy</a>
+            <a class="active navbar-item" href="genre\scifi.html">Sci-Fi</a>
+            <div class="">
+            <a class="active navbar-item" href="genre\romance.html">Romance</a>
+            </div>
+        </div>
     </nav>
+    <div class="columns">
+        <div class="column is-1 p-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');"></div>
+        <div class="column is-10 p-0">
+            <header class="hero is-small is-three-fifths is-offset-one-fifth" style="font-family: 'VT323', monospace; background-color: #204829;">
+                <div class="hero-body">
+                    <h1 class="title has-text-centered has-text-weight-bold pb-2" style="font-size: 60px; color: white;">Sci-Fi Movies</h1>
+                    <h2 class="subtitle has-text-centered my-0" style="font-size: 40px; color: white;">Here are the 25 best science fiction movies of all time.</h2>
+                    <!--<p class="subtitle has-text-centered my-0"> Ratings were gathered from the Online Movie Database.</p>-->
+                </div>
+            </header>
+            <hero class="hero is-medium" style="background-color: #80ce87; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                <div class="hero-body">
+                    <p class="subtitle" style="color: white; font-style: italic;">You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes" – Morpheus</p>
+                </div>
+            </hero>
+            <div style="background-color: #80ce87">
+            <!--The movies and reviews will link here-->
+            </div>
+        </div>
+        <div class="column is-1 p-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');"></div>
+    </div>
 </body>
 </html>
