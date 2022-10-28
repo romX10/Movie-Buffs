@@ -17,15 +17,17 @@
     <title>Horror Movies</title>
 </head>
 <body>
-    <nav>
+    <div data-role="header" style="overflow:hidden;">
         <button ><a class="active" href="../index.html">Movie Buffs</a></button>
-        <ul>
-            <li><a class="active" href="genre\horror.html">Horror</a></li>
-            <li><a class="active" href="genre\action.html">Action</a></li>
-            <li><a class="active" href="genre\comedy.html">Comedy</a></li>
-            <li><a class="active" href="genre\scifi.html">Sci-Fi</a></li>
-            <li><a class="active" href="genre\romance.html">Romance</a></li>
-        </ul>
-    </nav>
+              <div id="navbar" data-role="navbar">
+                  <ul>
+                    <li><a class="active" style="background-image: url('../assets/imgs/horror.jpg'); color: red; font-family: 'Island Moments'; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px #F5E2C8; border-radius: 25px;" id="horror" href="./horror.html">Horror</a></li>
+                    <li><a class="active" style='background-image: url("../assets/imgs/action.jpg"); color: blue; font-family: "Permanent Marker"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px grey; border-radius: 25px;'  id="action" href="./action.html">Action</a></li>
+                    <li><a class="active" style='background-image: url("../assets/imgs/comedy.jpg"); color: yellow; font-family: Anton; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="comedy" href="./comedy.html">Comedy</a></li>
+                    <li><a class="active" style='background-image: url("../assets/imgs/scifi.jpg"); color: rgb(11, 243, 11); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="scifi" href="./scifi.html">Sci-Fi</a></li>
+                    <li><a class="active" style='background-image: url("../assets/imgs/romance.jpg"); color: rgb(243, 243, 243); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="romance" href="./romance.html">Romance</a></li>
+                </ul>
+              </div>
+        </div> 
 </body>
 </html>
