@@ -4,7 +4,7 @@ const baseUrl = "https://tastedive.com/api/similar?";
 const baseApi = "k=443845-MovieBuf-E0P1IUCA";
 const omdbUrl = "http://www.omdbapi.com/?";
 const omdbApi = "apikey=c5b2da48";
-const carousel = document.getElementById('carousel');
+const results = document.getElementById('search-results');
 
 
 
@@ -37,7 +37,7 @@ function getMovie(title) {
 
   function postPoster(poster, titleTrial, id, score, plot, rated) {
     var figure = document.createElement("figure");//modal to create call api for review
-    carousel.appendChild(figure);
+    results.appendChild(figure);
     var image = document.createElement("img");
     image.setAttribute("src", poster);
     figure.appendChild(image);
