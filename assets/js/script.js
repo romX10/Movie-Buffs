@@ -5,6 +5,8 @@ const omdbApi = "apikey=c5b2da48";
 const baseUrl = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?";
 const baseApi = "api-key=kKm2DXzBnmrQRL4M3LboEX4YO1Kx54Ku";
 const results = document.getElementById("search-results");
+const review = document.getElementById("reviewContent");
+var parsedata = "";
 
 searchButton.addEventListener("click", function (e) {
   e.preventDefault();
@@ -36,10 +38,14 @@ function getMovie(title) {
 function postPoster(poster, titleTrial, id, score, plot, rated) {
   var figure = document.createElement("figure"); //modal to create call api for review
   results.appendChild(figure);
+  var anchor = document.createElement("a");
+  anchor.classList.add("js-modal-trigger");
+  anchor.setAttribute("data-target", "#review");
+  figure.appendChild(anchor);
   var image = document.createElement("img");
   image.setAttribute("src", poster);
   image.setAttribute("data-title", titleTrial);
-  figure.appendChild(image);
+  anchor.appendChild(image);
   var figCaption = document.createElement("figcaption");
   figCaption.textContent = titleTrial; //target figure child with data-title attr titleTrial
   figure.appendChild(figCaption);
@@ -55,28 +61,34 @@ function postPoster(poster, titleTrial, id, score, plot, rated) {
   var figCaption5 = document.createElement("figcaption");
   figCaption5.textContent = "Rated: " + rated;
   figure.appendChild(figCaption5);
-  console.log(titleTrial);
 }
 
 function getReviews(event) {
-    console.log(event)
-    var title = event.currentTarget.dataset.title
+  var title = event.currentTarget.dataset.title;
   fetch(`${baseUrl}query=${title}&${baseApi}`)
     .then((res) => res.json())
     .then((data) => {
       var parsedata = parseResult(data.results, title);
-      console.log(parsedata);
+      setModal(parsedata);
     });
 }
 
-
 function parseResult(resultsarray, title) {
-    // if (resultsarray !== null) {
-        var finalResult = resultsarray.find((result) => {
-            result["display_title"].toUpperCase() === title.toUpperCase();
-        });
-        return finalResult;
-    // }
+  if (resultsarray === null) {
+    return;
+  }
+  var finalResult = resultsarray.find(
+    (result) => result["display_title"].toUpperCase() === title.toUpperCase()
+  );
+  return finalResult.summary_short;
+}
+
+function setModal(parsedata) {
+  if (parsedata) {
+    review.textContent = parsedata;
+  } else {
+    review.textContent = "No reviews found at this time.";
+  }
 }
 
 $("#search-results").on("click", "img", getReviews);
