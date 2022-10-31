@@ -37,7 +37,7 @@ function getMovie(title) {
 }
 
 function postPoster(poster, titleTrial, id, score, plot, rated) {
-  var figure = document.createElement("figure"); //modal to create call api for review
+  var figure = document.createElement("figure");
   results.appendChild(figure);
   var anchor = document.createElement("a");
   anchor.classList.add("js-modal-trigger");
@@ -48,7 +48,7 @@ function postPoster(poster, titleTrial, id, score, plot, rated) {
   image.setAttribute("data-title", titleTrial);
   anchor.appendChild(image);
   var figCaption = document.createElement("figcaption");
-  figCaption.textContent = titleTrial; //target figure child with data-title attr titleTrial
+  figCaption.textContent = titleTrial;
   figure.appendChild(figCaption);
   var figCaption2 = document.createElement("figcaption");
   figCaption2.textContent = "IMDb id: " + id;
