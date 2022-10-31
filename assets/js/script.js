@@ -7,6 +7,7 @@ const baseApi = "api-key=kKm2DXzBnmrQRL4M3LboEX4YO1Kx54Ku";
 const results = document.getElementById("search-results");
 const review = document.getElementById("reviewContent");
 var parsedata = "";
+const modal = document.getElementById("review");
 
 searchButton.addEventListener("click", function (e) {
   e.preventDefault();
@@ -89,6 +90,13 @@ function setModal(parsedata) {
   } else {
     review.textContent = "No reviews found at this time.";
   }
+  modal.classList.add('is-active');
+}
+
+function closeModal() {
+    modal.classList.remove('is-active');
 }
 
 $("#search-results").on("click", "img", getReviews);
+
+$("#close").on("click", closeModal);
