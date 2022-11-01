@@ -75,3 +75,7 @@ function getMovie(title) {
   }
   
   getMovie(searchInput);
+
+
+
+
