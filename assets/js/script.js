@@ -106,6 +106,12 @@ function setModal(parsedata) {
   } else {
     review.textContent = "No reviews found at this time.";
   }
+  
+  getMovie(searchInput);
+
+
+
+
   modal.classList.add("is-active");
 }
 
