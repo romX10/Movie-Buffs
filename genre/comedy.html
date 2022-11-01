@@ -6,28 +6,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link src=".\assets\css\style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+      </script>
     <title>Comedy Movies</title>
 </head>
 <body>
-    <div data-role="header" style="overflow:hidden;">
-        <button><a class="active" href="../index.html">Movie Buffs</a></button>
-              <div id="navbar" data-role="navbar">
-                  <ul>
-                    <li><a class="active" style="background-image: url('../assets/imgs/horror.jpg'); color: red; font-family: 'Island Moments'; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px #F5E2C8; border-radius: 25px;" id="horror" href="./horror.html">Horror</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/action.jpg"); color: blue; font-family: "Permanent Marker"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px grey; border-radius: 25px;'  id="action" href="./action.html">Action</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/comedy.jpg"); color: yellow; font-family: Anton; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="comedy" href="./comedy.html">Comedy</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/scifi.jpg"); color: rgb(11, 243, 11); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="scifi" href="./scifi.html">Sci-Fi</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/romance.jpg"); color: rgb(243, 243, 243); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="romance" href="./romance.html">Romance</a></li>
-                </ul>
-             </div>
-        </div> 
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../index.html">
+            <img src="../assets/imgs/homec.png" width="auto" height="30">
+          </a>
+        </div>
+        <div class="tabs" style="background-color: black;">
+          <ul>
+            <li><a href="../genre/action.html" style="color: yellow">Action</a></li>
+            <li><a href="../genre/horror.html" style="color: yellow">Horror</a></li>
+            <li><a href="../genre/scifi.html" style="color: yellow">Sci-Fi</a></li>
+            <li><a href="../genre/romance.html" style="color: yellow">Romance</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+      <div class="hero-body" style="background-image: url('../assets/imgs/stage.jpg'); background-size: fit;">
+        <h1 class="title has-text-centered has-text-weight-bold pb-2" style="font-size: 60px; color: yellow;">Comedy Movies</h1>
+        <h2 class="subtitle has-text-centered my-0" style="font-size: 40px; color: Yellow;">Here are the 10 highest rated comedy movies of all time.</h2>
+        <!--<p class="subtitle has-text-centered my-0"> Ratings were gathered from the Online Movie Database.</p>-->
+    </div>
+    <div id="accordion" style="background-color:black ;">
+        <h3>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</h3>
+        <div style="background-color: black;">
+            <img  style="height: 450px; width: auto;" src="../assets/imgs/dr.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">An insane American general orders a bombing attack on the Soviet Union, triggering a path to nuclear holocaust that a war room full of politicians and generals frantically tries to stop.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">8.4</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">PG</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Monty Python and the Holy Grail</h3>
+        <div style="background-color: black;" >
+          <img style="height: 450px; width: auto;" src="../assets/imgs/monty.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">8.2</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">PG</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Big Lebowski</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/lebow.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">Ultimate L.A. slacker Jeff "The Dude" Lebowski, mistaken for a millionaire of the same name, seeks restitution for a rug ruined by debt collectors, enlisting his bowling buddies for help while trying to find the millionaire's missing wife.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">8.1</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">R</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Groundhog Day</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/ground.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">A narcissistic, self-centered weatherman finds himself in a time loop on Groundhog Day, and the day keeps repeating until he gets it right.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">8.1</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">PG</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Young Frankenstein</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/frank.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">An American grandson of the infamous scientist, struggling to prove that his grandfather was not as insane as people believe, is invited to Transylvania, where he discovers the process that reanimates a dead body.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">8.0</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">PG</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Shaun of the Dead</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/shaun.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">The uneventful, aimless lives of a London electronics salesman and his layabout roommate are disrupted by the zombie apocalypse.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">7.9</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">R</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Ghostbusters</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/ghost.png">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">Three parapsychologists forced out of their university funding set up shop as a unique ghost removal service in New York City, attracting frightened yet skeptical customers.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">7.8</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">PG</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Ferris Bueller's Day Off</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/ferris.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">A high school wise guy is determined to have a day off from school, despite what the Principal thinks of that.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">7.8</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">PG-13</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Hot Fuzz</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/fuzz.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">A skilled London police officer, after irritating superiors with his embarrassing effectiveness, is transferred to a village where the easygoing officers object to his fervor for regulations, as a string of grisly murders strikes the town.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">7.8</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">R</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Hangover</h3>
+        <div style="background-color: black;">
+          <img style="height: 450px; width: auto;" src="../assets/imgs/hangover.jpg">
+          <table>
+            <thead>
+              <tr>
+                <th style="color: white;">Plot:</th>
+                <th style="color: white;">Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: white;">Score:</td>
+                <td style="color: white;">7.7</td>
+              </tr>
+              <tr>
+                <td style="color: white;">Rating:</td>
+                <td style="color: white;">R</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

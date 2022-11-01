@@ -6,28 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
     <link src=".\assets\css\style.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
     <title>Horror Movies</title>
 </head>
 <body>
-    <div data-role="header" style="overflow:hidden;">
-        <button ><a class="active" href="../index.html">Movie Buffs</a></button>
-              <div id="navbar" data-role="navbar">
-                  <ul>
-                    <li><a class="active" style="background-image: url('../assets/imgs/horror.jpg'); color: red; font-family: 'Island Moments'; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px #F5E2C8; border-radius: 25px;" id="horror" href="./horror.html">Horror</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/action.jpg"); color: blue; font-family: "Permanent Marker"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px grey; border-radius: 25px;'  id="action" href="./action.html">Action</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/comedy.jpg"); color: yellow; font-family: Anton; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="comedy" href="./comedy.html">Comedy</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/scifi.jpg"); color: rgb(11, 243, 11); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="scifi" href="./scifi.html">Sci-Fi</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/romance.jpg"); color: rgb(243, 243, 243); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="romance" href="./romance.html">Romance</a></li>
-                </ul>
-              </div>
-        </div> 
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="../index.html">
+                <img src="../assets/imgs/home.jpg" width="45" height="25">
+              </a>
+            </div>
+            <div class="tabs">
+              <ul>
+                <li><a href="../genre/action.html" style="color: black">Action</a></li>
+                <li><a href="../genre/comedy.html" style="color: black">Comedy</a></li>
+                <li><a href="../genre/scifi.html" style="color: black">Sci-Fi</a></li>
+                <li><a href="../genre/romance.html" style="color: black">Romance</a></li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+
+        <div class="hero-body" style="background-image: url('../assets/imgs/eyes.gif'); background-size: fit;">
+            <h1 class="title has-text-centered has-text-weight-bold pb-2" style="font-size: 60px; color: red;">Horror Movies</h1>
+            <h2 class="subtitle has-text-centered my-0" style="font-size: 40px; color: red;">Here are the 10 highest rated horror movies of all time.</h2>
+            <!--<p class="subtitle has-text-centered my-0"> Ratings were gathered from the Online Movie Database.</p>-->
+        </div>
+        <div id="accordion" style="background-color:black ;">
+            <h3>Barbarian</h3>
+            <div style="background-color: black;">
+                <img  style="height: 450px; width: auto;" src="../assets/imgs/barbarian.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">A woman staying at an Airbnb discovers that the house she has rented is not what it seems.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">7.2</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Terrifier 2</h3>
+            <div style="background-color: black;" >
+              <img style="height: 450px; width: auto;" src="../assets/imgs/terrifier2.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">After being resurrected by a sinister entity, Art the Clown returns to the timid town of Miles County where he targets a teenage girl and her younger brother on Halloween night.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">6.5</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">NR</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Halloween Ends</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/halloweenends.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">The saga of Michael Myers and Laurie Strode comes to a spine-chilling climax in the final installment of this trilogy.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">5.0</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Terrifier</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/terrfier.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">On Halloween night, Tara Heyes finds herself as the obsession of a sadistic murderer known as Art the Clown.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">5.6</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">U</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Pearl</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/pearl.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">Backstory on how Pearl became the person she was.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">7.1</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Smile</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/smile.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. Rose must confront her troubling past in order to survive and escape her horrifying new reality.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">6.9</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>X</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/x.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">In 1979, a group of young filmmakers set out to make an adult film in rural Texas, but when their reclusive, elderly hosts catch them in the act, the cast find themselves fighting for their lives.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">6.6</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Hocus Pocus</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/hocuspocus.webp">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">A teenage boy named Max and his little sister move to Salem, where he struggles to fit in before awakening a trio of diabolical witches that were executed in the 17th century.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">6.9</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">PG</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Hellraiser</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/hellraiser.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">A take on Clive Barker's 1987 horror classic where a young woman struggling with addiction comes into possession of an ancient puzzle box, unaware that its purpose is to summon the Cenobites.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">6.0</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Nope</h3>
+            <div style="background-color: black;">
+              <img style="height: 450px; width: auto;" src="../assets/imgs/nope.jpg">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="color: white;">Plot:</th>
+                    <th style="color: white;">The residents of a lonely gulch in inland California bear witness to an uncanny and chilling discovery.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: white;">Score:</td>
+                    <td style="color: white;">6.9</td>
+                  </tr>
+                  <tr>
+                    <td style="color: white;">Rating:</td>
+                    <td style="color: white;">R</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+    <div class="" style="background-image: url('../assets/imgs/eyes.gif'); background-size: fit;">
+      <a style='color:red; text-align: center; justify-content: center;'href="https://www.youtube.com/watch?v=HqGsT6VM8Vg">Nostalgia - Click Here</a>
+    </div>
+<script src="../assets/js/script.js"></script>
 </body>
+
+
 </html>
