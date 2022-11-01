@@ -1,6 +1,6 @@
-var searchButton = document.getElementById('searchButton')
-var searchInput = document.getElementById('searchInput')
-const omdbUrl = "http://www.omdbapi.com/?";
+var searchButton = document.getElementById("searchButton");
+var searchInput = document.getElementById("searchInput");
+const omdbUrl = "https://www.omdbapi.com/?";
 const omdbApi = "apikey=c5b2da48";
 const baseUrl = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?";
 const baseApi = "api-key=kKm2DXzBnmrQRL4M3LboEX4YO1Kx54Ku";
@@ -12,6 +12,12 @@ const modal = document.getElementById("review");
 searchButton.addEventListener("click", function (e) {
   e.preventDefault();
   const userSearchInput = searchInput.value;
+  var oldSearch = document.querySelectorAll(".search-results");
+  if (oldSearch) {
+    oldSearch.forEach((el) => {
+      results.removeChild(el);
+    });
+  }
   getMovie(userSearchInput);
 });
 
@@ -39,6 +45,10 @@ function getMovie(title) {
 function postPoster(poster, titleTrial, id, score, plot, rated) {
   var figure = document.createElement("figure");
   results.appendChild(figure);
+  figure.classList.add("card"); // adding bulma
+  figure.classList.add("column"); //more bulma
+  figure.classList.add("is-one-fifth");
+  figure.classList.add("search-results");
   var anchor = document.createElement("a");
   anchor.classList.add("js-modal-trigger");
   anchor.setAttribute("data-target", "#review");
@@ -48,18 +58,24 @@ function postPoster(poster, titleTrial, id, score, plot, rated) {
   image.setAttribute("data-title", titleTrial);
   anchor.appendChild(image);
   var figCaption = document.createElement("figcaption");
+  figCaption.classList.add("content"); //adding bulma
+  figCaption.classList.add("card-header-title"); //more bulma
   figCaption.textContent = titleTrial;
   figure.appendChild(figCaption);
   var figCaption2 = document.createElement("figcaption");
+  figCaption2.classList.add("content"); //adding bulma
   figCaption2.textContent = "IMDb id: " + id;
   figure.appendChild(figCaption2);
   var figCaption3 = document.createElement("figcaption");
+  figCaption3.classList.add("content"); //adding bulma
   figCaption3.textContent = "IMDb score: " + score;
   figure.appendChild(figCaption3);
   var figCaption4 = document.createElement("figcaption");
+  figCaption4.classList.add("content"); //adding bulma
   figCaption4.textContent = "Plot: " + plot;
   figure.appendChild(figCaption4);
   var figCaption5 = document.createElement("figcaption");
+  figCaption5.classList.add("content"); //adding bluma
   figCaption5.textContent = "Rated: " + rated;
   figure.appendChild(figCaption5);
 }
@@ -90,11 +106,11 @@ function setModal(parsedata) {
   } else {
     review.textContent = "No reviews found at this time.";
   }
-  modal.classList.add('is-active');
+  modal.classList.add("is-active");
 }
 
 function closeModal() {
-    modal.classList.remove('is-active');
+  modal.classList.remove("is-active");
 }
 
 $("#search-results").on("click", "img", getReviews);
