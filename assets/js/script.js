@@ -1,20 +1,5 @@
-window.onscroll = function() {stickyNav()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
+var searchButton = document.getElementById('searchButton')
+var searchInput = document.getElementById('searchInput')
 const omdbUrl = "http://www.omdbapi.com/?";
 const omdbApi = "apikey=c5b2da48";
 const baseUrl = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?";
