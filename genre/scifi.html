@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link src=".\assets\css\style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     <title>Sci-fi Movies</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8ecb5e766.js" crossorigin="anonymous"></script>
 </head>
 <body style="font-family: 'Roboto Condensed', sans-serif;">
     <nav class="navbar is-align-items-end" style="background-color: #020204;">
@@ -29,19 +40,202 @@
         <div class="column is-1 p-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');"></div>
         <div class="column is-10 p-0">
             <header class="hero is-small is-three-fifths is-offset-one-fifth" style="font-family: 'VT323', monospace; background-color: #204829;">
-                <div class="hero-body">
+                <!--Instead of green box, add collage image of scifi movies-->
+                <div class="hero-body" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://kosmosaicbooks.com/wp-content/uploads/2012/01/Favorite-Sci-Fi-Posters-1024x576.jpg);">
                     <h1 class="title has-text-centered has-text-weight-bold pb-2" style="font-size: 60px; color: white;">Sci-Fi Movies</h1>
-                    <h2 class="subtitle has-text-centered my-0" style="font-size: 40px; color: white;">Here are the 25 best science fiction movies of all time.</h2>
+                    <h2 class="subtitle has-text-centered my-0" style="font-size: 40px; color: white;">Here are the 10 best science fiction movies of all time.</h2>
                     <!--<p class="subtitle has-text-centered my-0"> Ratings were gathered from the Online Movie Database.</p>-->
                 </div>
             </header>
             <hero class="hero is-medium" style="background-color: #80ce87; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
                 <div class="hero-body">
-                    <p class="subtitle" style="color: white; font-style: italic;">You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes" – Morpheus</p>
+                    <p class="subtitle" style="color: white; font-style: italic;">"You take the blue pill... the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes" – Morpheus</p>
                 </div>
             </hero>
-            <div style="background-color: #80ce87">
             <!--The movies and reviews will link here-->
+            <div id="movie-list">
+
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#1. Inception</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.8 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#2 The Matrix</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.7 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#3 Star Wars: Episode V - The Empire Strikes Back</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.7 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#4 Interstellar</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.6<i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://static.wikia.nocookie.net/whm/images/b/bd/Terminator2.jpg/revision/latest?cb=20181204180259" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#5 Terminator 2: Judgement Day</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.6 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her ten-year-old son John from a more advanced and powerful cyborg.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://static.wikia.nocookie.net/listofdeaths/images/b/b5/A_New_Hope_poster.jpg/revision/latest?cb=20211105092556" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#6 Star Wars: Episode IV - A New Hope</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.6 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://images.moviesanywhere.com/4d9df0e6b0bd732b3d1fa967b5b919fa/1adaca39-ae5e-4867-91fd-6025d3d08eb4.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#7 The Prestige</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.5 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            After a tragic accident, two stage magicians in 1890s London engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#8 Back to the Future</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.5 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://flxt.tmsimg.com/assets/p2571_p_v8_al.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#9 Alien</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.5 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns has-text-centered" style="background-color: #80ce87">
+                <figure class="image column is-one-third" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg" style="width: 400px; height: auto;">
+                </figure>
+                <div class="card column is-two-thirds" style="background-color: #80ce87">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 is-size-1" style="color:white;">#10 Spider-Man: Into the Spider-Verse</p>
+                                <p class="subtitle is-6 is-size-5" style="color:white;">Rating: 8.4 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content is-size-2" style="color:white;">
+                            Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             </div>
         </div>
         <div class="column is-1 p-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapercave.com/wp/wp3496500.jpg');"></div>
