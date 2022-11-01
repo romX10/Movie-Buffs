@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Color Scheme will be CA287E (hot pinkish), 56015F(purplish)-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,228 @@
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <link src=".\assets\css\style.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <script src="https://kit.fontawesome.com/b8ecb5e766.js" crossorigin="anonymous"></script>
     <title>Romance Movies</title>
 </head>
 <body>
-    <div data-role="header" style="overflow:hidden;">
+    <div data-role="header" style="overflow:hidden; background-color: #CA287E;">
         <button><a class="active" href="../index.html">Movie Buffs</a></button>
-              <div id="navbar" data-role="navbar">
-                  <ul>
-                    <li><a class="active" style="background-image: url('../assets/imgs/horror.jpg'); color: red; font-family: 'Island Moments'; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px #F5E2C8; border-radius: 25px;" id="horror" href="./horror.html">Horror</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/action.jpg"); color: blue; font-family: "Permanent Marker"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px grey; border-radius: 25px;'  id="action" href="./action.html">Action</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/comedy.jpg"); color: yellow; font-family: Anton; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="comedy" href="./comedy.html">Comedy</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/scifi.jpg"); color: rgb(11, 243, 11); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="scifi" href="./scifi.html">Sci-Fi</a></li>
-                    <li><a class="active" style='background-image: url("../assets/imgs/romance.jpg"); color: rgb(243, 243, 243); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="romance" href="./romance.html">Romance</a></li>
-                </ul>
-              </div>
-        </div> 
+        <div id="navbar" data-role="navbar">
+            <ul>
+                <li><a class="active" style='color: rgb(243, 243, 243); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="home" href="./romance.html">Home</a></li>
+                <li><a class="active" style="background-image: url('../assets/imgs/horror.jpg'); color: red; font-family: 'Island Moments'; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px #F5E2C8; border-radius: 25px;" id="horror" href="./horror.html">Horror</a></li>
+                <li><a class="active" style='background-image: url("../assets/imgs/action.jpg"); color: blue; font-family: "Permanent Marker"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px grey; border-radius: 25px;'  id="action" href="./action.html">Action</a></li>
+                <li><a class="active" style='background-image: url("../assets/imgs/comedy.jpg"); color: yellow; font-family: Anton; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="comedy" href="./comedy.html">Comedy</a></li>
+                <li><a class="active" style='background-image: url("../assets/imgs/scifi.jpg"); color: rgb(11, 243, 11); font-family: "Playfair Display"; font-size: 32px; margin: auto; padding: 0; text-shadow: 1px 1px 2px gray; border-radius: 25px;' id="scifi" href="./scifi.html">Sci-Fi</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-1 p-0" style="background-image: linear-gradient(#CA287E, #56015F), url('https://previews.123rf.com/images/iradvilyuk/iradvilyuk1603/iradvilyuk160300048/53235010-hearts-seamless-pattern-striped-love-hearts-background-red-pink-and-rose-vertical-heads-line-pattern.jpg');"></div>
+        <div class="column is-10 p-0" style="background-image: linear-gradient(#CA287E, #56015F), url('https://previews.123rf.com/images/iradvilyuk/iradvilyuk1603/iradvilyuk160300048/53235010-hearts-seamless-pattern-striped-love-hearts-background-red-pink-and-rose-vertical-heads-line-pattern.jpg');">
+            <header class="hero is-small is-three-fifths is-offset-one-fifth">
+                <div class="hero-body" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.telegraph.co.uk/content/dam/film/whattowatch/oscars-history/oscars-titanic.jpg);">
+                    <h1 class="title has-text-centered has-text-weight-bold pb-2" style="font-size: 60px; color: white; font-family: 'Gochi Hand', cursive;">Romance Movies</h1>
+                    <h2 class="subtitle has-text-centered my-0" style="font-size: 40px; color: white; font-family: 'Gochi Hand', cursive;">Grab your someone, a blanket and be prepared to get teary-eyed because here are the top ten romance movies of all time!</h2>
+                </div>
+            </header>
+            <div class="columns">
+                <div class="column is-4" id="column-1">
+                <div class="card my-2">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                        <img src="../assets/imgs/forrest-gump.jpg" alt="Forrest Gump Movie Poster">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">#1. Forrest Gump</p>
+                                <p class="subtitle is-6">Rating: 8.8 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                        The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart. <a href="https://youtu.be/bLvqoHBptjg">Watch the preview here!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                        <img src="../assets/imgs/good-will-hunting.jpg" alt="Good Will Hunting Poster">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">#4. Good Will Hunting</p>
+                                <p class="subtitle is-6">Rating: 8.3 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life. <a href="https://youtu.be/ReIJ1lbL-Q8">Watch the preview here!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                        <img src="../assets/imgs/silver-linings-playbook.jpg" alt="Silver Linings Playbook Movie Poster">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">#7. Silver Linings Playbook</p>
+                                <p class="subtitle is-6">Rating: 7.7 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own. <a href="https://youtu.be/kVS-6k2tQAA">Watch the preview here!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-2">
+                    <div class="card-image">
+                        <figure class="image is-3by4">
+                        <img src="../assets/imgs/the-curious-case-of-benjamin-button.jpg" alt="The Curious Case of Benjamin Button Movie Poster">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">#10. The Curious Case of Benjamin Button</p>
+                                <p class="subtitle is-6">Rating: 7.8 <i class="fa-regular fa-star"></i></p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            Tells the story of Benjamin Button, a man who starts aging backwards with consequences. <a href="https://youtu.be/iH6FdW39Hag">Watch the preview here!</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="column is-4" id="column-2">
+                    <div class="card my-2">
+                        <div class="card-image">
+                            <figure class="image is-3by4">
+                            <img src="../assets/imgs/titanic.jpg" alt="Forrest Gump Movie Poster">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">#2. Titanic</p>
+                                    <p class="subtitle is-6">Rating: 7.9 <i class="fa-regular fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic. <a href="https://youtu.be/CHekzSiZjrY">Watch the preview here!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-2">
+                        <div class="card-image">
+                            <figure class="image is-3by4">
+                            <img src="../assets/imgs/slumdog-millionaire.jpg" alt="Slumdog Millionaire Movie Poster">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">#5. Slumdog Millionaire</p>
+                                    <p class="subtitle is-6">Rating: 8.0 <i class="fa-regular fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                A Mumbai teenager reflects on his life after being accused of cheating on the Indian version of "Who Wants to be a Millionaire?". <a href="https://youtu.be/AIzbwV7on6Q">Watch the preview here!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-2">
+                        <div class="card-image">
+                            <figure class="image is-3by4">
+                            <img src="../assets/imgs/life-is-beautiful.jpg" alt="Life Is Beautiful Movie Poster">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">#8. Life Is Beautiful</p>
+                                    <p class="subtitle is-6">Rating: 8.6 <i class="fa-regular fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                When an open-minded Jewish waiter and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp. <a href="https://youtu.be/pAYEQP8gx3w">Watch the preview here!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4" id="column-3">
+                    <div class="card my-2">
+                        <div class="card-image">
+                            <figure class="image is-3by4">
+                            <img src="../assets/imgs/eternal-sunshine.jpg" alt="Eternal Sunshine of the Spotless Mind Poster">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">#3. Eternal Sunshine of the Spotless Mind</p>
+                                    <p class="subtitle is-6">Rating: 8.3 <i class="fa-regular fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                            When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories. <a href="https://youtu.be/07-QBnEkgXU">Watch the preview here!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-3by4">
+                            <img src="../assets/imgs/amelie.jpg" alt="Amélie Movie Poster">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">#6. Amélie</p>
+                                    <p class="subtitle is-6">Rating: 8.3 <i class="fa-regular fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love. <a href="https://youtu.be/HUECWi5pX7o">Watch the preview here!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-2">
+                        <div class="card-image">
+                            <figure class="image is-3by4">
+                            <img src="../assets/imgs/shrek-1.jpg" alt="Shrek Movie Poster">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">#9. Shrek</p>
+                                    <p class="subtitle is-6">Rating: 7.9 <i class="fa-regular fa-star"></i></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back. <a href="https://youtu.be/CwXOrWvPBPk">Watch the preview here!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-1 p-0" style="background-image: linear-gradient(#CA287E, #56015F), url('https://previews.123rf.com/images/iradvilyuk/iradvilyuk1603/iradvilyuk160300048/53235010-hearts-seamless-pattern-striped-love-hearts-background-red-pink-and-rose-vertical-heads-line-pattern.jpg');"></div>
+    </div>
 </body>
 </html>
