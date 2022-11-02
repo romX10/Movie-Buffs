@@ -27,24 +27,23 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    <link src="./assets/css/style.css" />
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link  rel="stylesheet" href="./assets/css/style.css"/>
+    <!-- <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
 
     <title>Movie-Buffs</title>
   </head>
 
   <body>
     <div data-role="header" style="overflow: hidden">
-      <h1>Movie Buffs</h1>
-      <div id="navbar" data-role="navbar">
-        <ul>
-          <li>
+      <h1 id="title">Movie Buffs</h1>
+      <div id="navbar" data-role="navbar" class="navbar is-justify-content-space-evenly">
+        <div class="container">
             <a
-              class="active"
+              class="active navbar-item"
               style="
                 background-image: url('./assets/imgs/horror.jpg');
                 color: red;
@@ -59,10 +58,8 @@
               href="./genre/horror.html"
               >Horror</a
             >
-          </li>
-          <li>
             <a
-              class="active"
+              class="active navbar-item"
               style="
                 background-image: url('./assets/imgs/action.jpg');
                 color: blue;
@@ -77,10 +74,8 @@
               href="./genre/action.html"
               >Action</a
             >
-          </li>
-          <li>
             <a
-              class="active"
+              class="active navbar-item"
               style="
                 background-image: url('./assets/imgs/comedy.jpg');
                 color: yellow;
@@ -95,10 +90,8 @@
               href="./genre/comedy.html"
               >Comedy</a
             >
-          </li>
-          <li>
             <a
-              class="active"
+              class="active navbar-item"
               style="
                 background-image: url('./assets/imgs/scifi.jpg');
                 color: rgb(11, 243, 11);
@@ -113,10 +106,8 @@
               href="./genre/scifi.html"
               >Sci-Fi</a
             >
-          </li>
-          <li>
             <a
-              class="active"
+              class="active navbar-item"
               style="
                 background-image: url('./assets/imgs/romance.jpg');
                 color: rgb(243, 243, 243);
@@ -131,27 +122,15 @@
               href="./genre/romance.html"
               >Romance</a
             >
-          </li>
-        </ul>
+      </div>
       </div>
     </div>
-    <div id="search-bar">
-      <input id="searchInput" type="text" placeholder="search" />
-      <button id="searchButton">Search</button>
+
+    <div id="search-bar" class="is-justify-content-center container">
+      <input id="searchInput" type="text" placeholder="search" class="my-3"/>
+      <button id="searchButton" class="my-3">Search</button>
     </div>
 
-      <h2>Top 10 Movies of All Time</h2>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
     <div id="search-results" class="columns is-multiline"></div>
 
     <div class="modal" id="review">
